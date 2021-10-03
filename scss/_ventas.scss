@@ -1,0 +1,99 @@
+.grid-container-ventas {
+    display: grid;
+    grid-template-areas:
+        "ventas"
+        "foto2"
+        "direc2"
+        "info2"
+        "foto5 "
+        "direc5 "
+        "info5"
+        "foto6 "
+        "direc6"
+        "info6"
+        "foto11"
+        "direc11"
+        "info11" 
+        "foto12" 
+        "direc12"
+        "info12"
+        "foto13"
+        "direc13"
+        "info13";
+    grid-template-columns:1fr;
+    grid-row-gap: 10px;
+}
+
+@media only screen and (min-width:764px) {
+    .grid-container-ventas {
+        display: grid;
+        grid-template-areas:
+            "ventas ventas"
+            "foto2 direc2"
+            "foto2 info2"
+            "foto5 direc5"
+            "foto5 info5"
+            "foto6 direc6"
+            "foto6 info6"
+            "foto11 direc11"
+            "foto11 info11"
+            "foto12 direc12"
+            "foto12 info12"
+            "foto13 direc13"
+            "foto13 info13";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .grid-container-ventas {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-areas:
+        "ventas ventas ventas"
+        "foto2 foto5 foto6"
+        "direc2 direc5 direc6"
+        "info2 info5 info6"
+        "foto11 foto12 foto13"
+        "direc11 direc12 direc13"
+        "info11 info12 info13";
+        } 
+}
+
+#ventas {
+    grid-area: ventas;
+}
+#foto11 {
+    grid-area: foto11;
+}
+
+#foto12 {
+    grid-area: foto12;
+}
+
+#foto13 {
+    grid-area: foto13;
+}
+#direc11 {
+    grid-area: direc11;
+}
+
+#direc12 {
+    grid-area: direc12;
+}
+
+#direc13 {
+    grid-area: direc13;
+}
+#info11 {
+    grid-area: info11;
+}
+
+#info12 {
+    grid-area: info12;
+}
+
+#info13 {
+    grid-area: info13;
+}

@@ -1,0 +1,82 @@
+.grid-container-terrenos {
+    display: grid;
+    grid-template-areas:
+        "terrenos"
+        "foto16"
+        "direc16"
+        "info16"
+        "foto14"
+        "direc14"
+        "info14"
+        "foto15"
+        "direc15"
+        "info15"
+       ;
+    grid-template-columns:1fr;
+    grid-row-gap: 10px;
+}
+@media only screen and (min-width:764px){
+    .grid-container-terrenos {
+        display: grid;
+        grid-template-areas:
+            "terrenos terrenos"
+            "foto16 direc16"
+            "foto16 info16"
+            "foto14 direc14"
+            "foto14 info14"
+            "foto15 direc15"
+            "foto15 info15";
+        grid-template-columns: 1f 1fr;
+        grid-row-gap: 10px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .grid-container-terrenos {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-areas:
+        "terrenos terrenos terrenos"
+        "foto16 foto14 foto15"
+        "direc16 direc14 direc15"
+        "info16 info14 info15";
+        } 
+}
+
+
+#terrenos {
+    grid-area: terrenos;
+}
+#foto14 {
+    grid-area: foto14;
+}
+
+#foto15 {
+    grid-area: foto15;
+}
+
+#foto16 {
+    grid-area: foto16;
+}
+#direc14 {
+    grid-area: direc14;
+}
+
+#direc15 {
+    grid-area: direc15;
+}
+
+#direc16 {
+    grid-area: direc16;
+}
+#info14 {
+    grid-area: info14;
+}
+
+#info15 {
+    grid-area: info15;
+}
+
+#info16 {
+    grid-area: info16;
+}

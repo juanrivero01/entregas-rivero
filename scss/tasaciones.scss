@@ -1,0 +1,36 @@
+body {
+    #mapa {
+    grid-area: mapa;
+    margin-left: 30px;
+    width: 900px;
+    }
+    
+    .p4 {
+        font-size: 20px;
+        font-weight: 300;
+        word-spacing: 5px;
+        margin: 5px 50px;
+        text-align: justify;
+    }
+}
+
+
+
+@media only screen and (min-width:1024px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "tasaciones tasaciones tasaciones"
+            "mapa mapa texto";
+    }
+}
+
+#tasaciones {
+    grid-area: tasaciones;
+}
+
+
+#texto {
+    grid-area: texto;
+}

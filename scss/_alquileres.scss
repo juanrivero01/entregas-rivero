@@ -1,0 +1,99 @@
+.grid-container-alquileres {
+    display: grid;
+    grid-template-areas:
+        "alquileres"
+        "foto1"
+        "direc1"
+        "info1"
+        "foto3 "
+        "direc3 "
+        "info3"
+        "foto4 "
+        "direc4"
+        "info4"
+        "foto8"
+        "direc8"
+        "info8" 
+        "foto9" 
+        "direc9"
+        "info9"
+        "foto10"
+        "direc10"
+        "info10";
+    grid-template-columns:1fr;
+    grid-row-gap: 10px;
+}
+
+@media only screen and (min-width:764px) {
+    .grid-container-alquileres {
+        display: grid;
+        grid-template-areas:
+            "alquileres alquileres"
+            "foto1 direc1"
+            "foto1 info1"
+            "foto3 direc3"
+            "foto3 info3"
+            "foto4 direc4"
+            "foto4 info4"
+            "foto8 direc8"
+            "foto8 info8"
+            "foto9 direc9"
+            "foto9 info9"
+            "foto10 direc10"
+            "foto10 info10";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .grid-container-alquileres {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-areas:
+        "alquileres alquileres alquileres"
+        "foto1 foto3 foto4"
+        "direc1 direc3 direc4"
+        "info1 info3 info4"
+        "foto8 foto9 foto10"
+        "direc8 direc9 direc10"
+        "info8 info9 info10";
+        } 
+}
+
+#alquileres {
+    grid-area: alquileres;
+}
+#foto8 {
+    grid-area: foto8;
+}
+
+#foto9 {
+    grid-area: foto9;
+}
+
+#foto10 {
+    grid-area: foto10;
+}
+#direc8 {
+    grid-area: direc8;
+}
+
+#direc9 {
+    grid-area: direc9;
+}
+
+#direc10 {
+    grid-area: direc10;
+}
+#info8 {
+    grid-area: info8;
+}
+
+#info9 {
+    grid-area: info9;
+}
+
+#info10 {
+    grid-area: info10;
+}
