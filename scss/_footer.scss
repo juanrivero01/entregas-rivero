@@ -1,0 +1,41 @@
+footer {
+    background-color: blue;
+    margin-left: 0px;
+    margin-right: 0px;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "logofooter"
+        "secciones"
+        "oficina";
+    }
+}
+
+@media only screen and (min-width: 764px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "logofooter secciones oficina";
+    }
+}
+
+.margin-footer {
+    margin-top: 45px;
+}
+#logofooter {
+    grid-area: logofooter;
+    justify-self: center;
+}
+
+#secciones {
+    grid-area: secciones;
+    margin-top: 45px;
+}
+
+#oficna {
+    grid-area: oficina;
+    justify-self: center;
+    margin-top: 45px;
+    
+}

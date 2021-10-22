@@ -5,21 +5,20 @@
 @import "ventas";
 @import "terrenos";
 @import "tasaciones";
+@import "footer";
 
 
 main {
-    margin: 30px;
     font-family: "Roboto";
     padding: 0%;
+    
     
     .imagen-tipo1 {
         width: 300px;
         height: 500px;
-        padding: 5px;
-        margin: 5px 10px;
-        margin-left: 30px;
+        // padding: 5px;
+        padding: 5px 10px;
         justify-self: center;
-
     }
     .imagen-tipo1:hover {
         transform: scale(1.25);
@@ -42,3 +41,5 @@ main {
         margin: 30px;
     }
 }
+
+
